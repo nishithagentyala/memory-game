@@ -1,12 +1,17 @@
 import React from "react";
-import Home from "./components/Home";
+import SelectCardGrid from "./components/SelectCardGrid";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="App">
-      <h2>Memory Game</h2>
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <h2>Memory Game</h2>
+        <Routes>
+          <Route path="/" element={<SelectCardGrid />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

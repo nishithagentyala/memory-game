@@ -3,7 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
 .App {
+  margin: 20px auto;
   text-align: center;
-  margin: 0px auto;
+}
+.theme div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.themeCard {
+  cursor: pointer;
+  background-color: blanchedalmond;
+  margin: 10px;
+  width: fit-content;
+  text-align: center;
+  padding: 10px;
+}
+button {
+  background-color: rgb(167, 116, 50);
+  border: 2px solid blanchedalmond;
+  padding: 10px;
+  margin: 10px;
+}
+.won {
+  font-size: 35px;
+  background: linear-gradient(0%, pink, 50%, red);
+}
+button:hover {
+  background-color: #45a049;
 }
